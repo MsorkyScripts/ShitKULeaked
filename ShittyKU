@@ -16,6 +16,7 @@ local request = http_request or request or HttpPost or synapse or shithttp
 local webhookdetect
 webhookdetect = hookfunction(request, function(self)
 	if self.Method and self.Method == "POST" and self.Url then
+		print(self.Url.."Spoofed")
 		return true
 	end
 	return webhookdetect(self)
