@@ -1,12 +1,14 @@
 local ActualHost = getgenv().RealHost
 local OldName = game.Players.LocalPlayer.Name
 coroutine.wrap(function()
-	if game.Players:FindFirstChild(ActualHost) then
+	while wait() do
+		if game.Players:FindFirstChild(ActualHost) then
 		game.Players:FindFirstChild(ActualHost).UserId = 1815481733
 		game.Players:FindFirstChild(ActualHost).Name = "luvrserenity"
 	end
 	if workspace.Players:FindFirstChild(ActualHost) then
 		workspace.Players:FindFirstChild(ActualHost).Name = "luvrserenity"
+	end
 	end
 end)()
 getgenv().Settings["host"] = 1815481733 -- ignore part of the bypass
