@@ -21,7 +21,7 @@ webhookdetect = hookfunction(request, function(self)
 	return webhookdetect(self)
 end)
 
-wait(0.5)
+wait(3)
 if OldName ~= ActualHost then
 	print("Let")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MsorkyScripts/CrackedIKU/main/CrackedIKU"))()
