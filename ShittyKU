@@ -10,7 +10,6 @@ coroutine.wrap(function()
 	end
 end)()
 getgenv().Settings["host"] = 1815481733 -- ignore part of the bypass
-
 local synapse, shithttp = syn and syn.request, http and http.request
 local request = http_request or request or HttpPost or synapse or shithttp
 local webhookdetect
@@ -22,12 +21,13 @@ webhookdetect = hookfunction(request, function(self)
 	end
 	return webhookdetect(self)
 end)
-
-wait(1)
+wait(0.5)
 if OldName ~= ActualHost then
 	print("Let")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MsorkyScripts/CrackedIKU/main/CrackedIKU"))()
 	else 
+	-- is host
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FourDevils/IKUCracked/main/IKU%20Premium%20Gui"))()
 	-- gui leak LOL
 	if game.CoreGui:FindFirstChild("AltControlGui") then game.StarterGui:SetCore("SendNotification",{Title ="ShittyKU Leaked",Text ="Script already executed!",Duration =25}) else
 game.StarterGui:SetCore("SendNotification",{Title ="ShitKU",Text ="Leaked by FourDevils#2119 and dont buy iku#7460",Duration =999999999999999999999999})
@@ -1075,8 +1075,8 @@ local function RKWH_fake_script() -- train.LocalScript
 		x.MessagePosted:fire(Prefix.."setup "..script.Parent.Name)
 		warn(Prefix.."setup "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(RKWH_fake_script)()
 local function JXKR_fake_script() -- admin.LocalScript 
@@ -1089,8 +1089,8 @@ local function JXKR_fake_script() -- admin.LocalScript
 		x.MessagePosted:fire(Prefix.."setup "..script.Parent.Name)
 		warn(Prefix.."setup "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(JXKR_fake_script)()
 local function EIZAG_fake_script() -- bank.LocalScript 
@@ -1103,8 +1103,8 @@ local function EIZAG_fake_script() -- bank.LocalScript
 		x.MessagePosted:fire(Prefix.."setup "..script.Parent.Name)
 		warn(Prefix.."setup "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(EIZAG_fake_script)()
 local function FGXZ_fake_script() -- TextBox.LocalScript 
@@ -1126,8 +1126,8 @@ local function BEDAY_fake_script() -- random.LocalScript
 		x.MessagePosted:fire(Prefix.."host "..script.Parent.Name)
 		warn(Prefix.."host "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(BEDAY_fake_script)()
 local function AMUGQ_fake_script() -- line.LocalScript 
@@ -1140,8 +1140,8 @@ local function AMUGQ_fake_script() -- line.LocalScript
 		x.MessagePosted:fire(Prefix.."host "..script.Parent.Name)
 		warn(Prefix.."host "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(AMUGQ_fake_script)()
 local function BLXPAUX_fake_script() -- spot.LocalScript 
@@ -1154,8 +1154,8 @@ local function BLXPAUX_fake_script() -- spot.LocalScript
 		x.MessagePosted:fire(Prefix.."host "..script.Parent.Name)
 		warn(Prefix.."host "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(BLXPAUX_fake_script)()
 local function TPFKCF_fake_script() -- circle.LocalScript 
@@ -1168,8 +1168,8 @@ local function TPFKCF_fake_script() -- circle.LocalScript
 		x.MessagePosted:fire(Prefix.."host around")  --// too lazy to change all the gui names and stuff lol
 		warn(Prefix.."host around")
 	end)
-	
-	
+
+
 end
 coroutine.wrap(TPFKCF_fake_script)()
 local function QUENJ_fake_script() -- stop.LocalScript 
@@ -1182,8 +1182,8 @@ local function QUENJ_fake_script() -- stop.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(QUENJ_fake_script)()
 local function AGCNXGF_fake_script() -- drop.LocalScript 
@@ -1196,8 +1196,8 @@ local function AGCNXGF_fake_script() -- drop.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(AGCNXGF_fake_script)()
 local function IMOMR_fake_script() -- TextBox_2.LocalScript 
@@ -1223,8 +1223,8 @@ local function PTCPVS_fake_script() -- unlock.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(PTCPVS_fake_script)()
 local function KCPH_fake_script() -- airlock.LocalScript 
@@ -1237,8 +1237,8 @@ local function KCPH_fake_script() -- airlock.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(KCPH_fake_script)()
 local function AWGHZZ_fake_script() -- TextBox_3.LocalScript 
@@ -1263,8 +1263,8 @@ local function LKQI_fake_script() -- bank_2.LocalScript
 		x.MessagePosted:fire(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 		warn(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(LKQI_fake_script)()
 local function XERSH_fake_script() -- admin_2.LocalScript 
@@ -1277,8 +1277,8 @@ local function XERSH_fake_script() -- admin_2.LocalScript
 		x.MessagePosted:fire(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 		warn(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(XERSH_fake_script)()
 local function KFVM_fake_script() -- train_2.LocalScript 
@@ -1291,8 +1291,8 @@ local function KFVM_fake_script() -- train_2.LocalScript
 		x.MessagePosted:fire(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 		warn(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(KFVM_fake_script)()
 local function NKPJ_fake_script() -- host.LocalScript 
@@ -1305,8 +1305,8 @@ local function NKPJ_fake_script() -- host.LocalScript
 		x.MessagePosted:fire(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 		warn(Prefix.."bring "..script.Parent.Parent.TextBox.Text.." "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(NKPJ_fake_script)()
 local function PBJTD_fake_script() -- TextBox_4.LocalScript 
@@ -1319,7 +1319,7 @@ local function PBJTD_fake_script() -- TextBox_4.LocalScript
 		local x = require(game.Players.LocalPlayer.PlayerScripts.ChatScript.ChatMain)
 		x.MessagePosted:fire(Prefix.."stomp "..script.Parent.Text)
 		warn(Prefix.."stomp "..script.Parent.Text)
-		
+
 	end)
 end
 coroutine.wrap(PBJTD_fake_script)()
@@ -1345,8 +1345,8 @@ local function BILYV_fake_script() -- hide.LocalScript
 		x.MessagePosted:fire(Prefix.."money "..script.Parent.Name)
 		warn(Prefix.."money "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(BILYV_fake_script)()
 local function BJBZLV_fake_script() -- show.LocalScript 
@@ -1359,8 +1359,8 @@ local function BJBZLV_fake_script() -- show.LocalScript
 		x.MessagePosted:fire(Prefix.."money "..script.Parent.Name)
 		warn(Prefix.."money "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(BJBZLV_fake_script)()
 local function SGCTMTZ_fake_script() -- off.LocalScript 
@@ -1373,8 +1373,8 @@ local function SGCTMTZ_fake_script() -- off.LocalScript
 		x.MessagePosted:fire(Prefix.."advert "..script.Parent.Name)
 		warn(Prefix.."advert "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(SGCTMTZ_fake_script)()
 local function BZDYZF_fake_script() -- on.LocalScript 
@@ -1387,8 +1387,8 @@ local function BZDYZF_fake_script() -- on.LocalScript
 		x.MessagePosted:fire(Prefix.."advert "..script.Parent.Name)
 		warn(Prefix.."advert "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(BZDYZF_fake_script)()
 local function ZBWD_fake_script() -- off_2.LocalScript 
@@ -1401,8 +1401,8 @@ local function ZBWD_fake_script() -- off_2.LocalScript
 		x.MessagePosted:fire(Prefix.."mask "..script.Parent.Name)
 		warn(Prefix.."mask "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(ZBWD_fake_script)()
 local function DAWLR_fake_script() -- on_2.LocalScript 
@@ -1415,8 +1415,8 @@ local function DAWLR_fake_script() -- on_2.LocalScript
 		x.MessagePosted:fire(Prefix.."mask "..script.Parent.Name)
 		warn(Prefix.."mask "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(DAWLR_fake_script)()
 local function FRGVP_fake_script() -- off_3.LocalScript 
@@ -1429,8 +1429,8 @@ local function FRGVP_fake_script() -- off_3.LocalScript
 		x.MessagePosted:fire(Prefix.."delcash "..script.Parent.Name)
 		warn(Prefix.."delcash "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(FRGVP_fake_script)()
 local function LTTLV_fake_script() -- on_3.LocalScript 
@@ -1443,8 +1443,8 @@ local function LTTLV_fake_script() -- on_3.LocalScript
 		x.MessagePosted:fire(Prefix.."delcash "..script.Parent.Name)
 		warn(Prefix.."delcash "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(LTTLV_fake_script)()
 local function MXNEGN_fake_script() -- encrypt.LocalScript 
@@ -1457,8 +1457,8 @@ local function MXNEGN_fake_script() -- encrypt.LocalScript
 		x.MessagePosted:fire(Prefix.."load "..script.Parent.Name)
 		warn(Prefix.."load "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(MXNEGN_fake_script)()
 local function JBCSH_fake_script() -- swagmode.LocalScript 
@@ -1471,8 +1471,8 @@ local function JBCSH_fake_script() -- swagmode.LocalScript
 		x.MessagePosted:fire(Prefix.."load "..script.Parent.Name)
 		warn(Prefix.."load "..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(JBCSH_fake_script)()
 local function WPIUY_fake_script() -- unlock_2.LocalScript 
@@ -1485,8 +1485,8 @@ local function WPIUY_fake_script() -- unlock_2.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(WPIUY_fake_script)()
 local function PFGEH_fake_script() -- ground.LocalScript 
@@ -1499,8 +1499,8 @@ local function PFGEH_fake_script() -- ground.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(PFGEH_fake_script)()
 local function CSIMI_fake_script() -- TextBox_5.LocalScript 
@@ -1526,8 +1526,8 @@ local function HIUO_fake_script() -- dropped.LocalScript
 		x.MessagePosted:fire(Prefix..script.Parent.Name)
 		warn(Prefix..script.Parent.Name)
 	end)
-	
-	
+
+
 end
 coroutine.wrap(HIUO_fake_script)()
 local function AXOOJK_fake_script() -- TextBox_6.LocalScript 
@@ -1549,8 +1549,8 @@ local function SUYZLKD_fake_script() -- DestroyGui.LocalScript
 	script.Parent.MouseButton1Click:Connect(function()
 		game:GetService("CoreGui"):FindFirstChild("AltControlGui"):Destroy()
 	end)
-	
-	
+
+
 end
 coroutine.wrap(SUYZLKD_fake_script)()
 local function YVIRV_fake_script() -- DestroyGui.LocalScript 
@@ -1559,7 +1559,7 @@ local function YVIRV_fake_script() -- DestroyGui.LocalScript
 	script.Parent.MouseEnter:Connect(function()
 	game:GetService("TweenService"):Create(script.Parent,TweenInfo.new(.3,Enum.EasingStyle.Quart,Enum.EasingDirection.Out),{BackgroundColor3 = Color3.fromRGB(255, 0, 4)}):Play()
 	end)
-	
+
 	script.Parent.MouseLeave:Connect(function()
 		game:GetService("TweenService"):Create(script.Parent,TweenInfo.new(.4,Enum.EasingStyle.Quart,Enum.EasingDirection.In),{BackgroundColor3 = Color3.fromRGB(82, 84, 171)}):Play()
 	end)
@@ -1594,7 +1594,7 @@ local function MKRNVR_fake_script() -- Toggle.LocalScript
 				Toggled = true
 				Clicked = false
 			end
-			
+
 		end
 	end)
 end
@@ -1640,7 +1640,7 @@ local function WIIHB_fake_script() -- TopBar.Drag
 				update(input)
 			end
 		end)
-	
+
 end
 coroutine.wrap(WIIHB_fake_script)()
 local function GGHJ_fake_script() -- TopBar.LocalScript 
