@@ -27,5 +27,9 @@ wait(0.5)
 if OldName ~= ActualHost then
 	print("Let")
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/MsorkyScripts/CrackedIKU/main/CrackedIKU"))()
+	else 
+	-- is host
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FourDevils/IKUCracked/main/IKU%20Premium%20Gui"))()
+
 end
 print("Worked2")
