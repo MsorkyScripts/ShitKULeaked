@@ -2,20 +2,22 @@ local ActualHost = getgenv().RealHost
 local OldName = game.Players.LocalPlayer.Name
 coroutine.wrap(function()
 	if game.Players:FindFirstChild(ActualHost) then
-		game.Players:FindFirstChild(ActualHost).UserId = 1639493597
-		game.Players:FindFirstChild(ActualHost).Name = "IMetTodoroki"
+		game.Players:FindFirstChild(ActualHost).UserId = 1815481733
+		game.Players:FindFirstChild(ActualHost).Name = "luvrserenity"
 	end
 	if workspace.Players:FindFirstChild(ActualHost) then
-		workspace.Players:FindFirstChild(ActualHost).Name = "IMetTodoroki"
+		workspace.Players:FindFirstChild(ActualHost).Name = "luvrserenity"
 	end
 end)()
-getgenv().Settings["host"] = 1639493597 -- ignore part of the bypass
+getgenv().Settings["host"] = 1815481733 -- ignore part of the bypass
 
 local synapse, shithttp = syn and syn.request, http and http.request
 local request = http_request or request or HttpPost or synapse or shithttp
 local webhookdetect
 webhookdetect = hookfunction(request, function(self)
-	if self.Method and self.Method == "POST" then
+	if self.Method and self.Method == "POST" and self.Url then
+		local abcdef = { Url = self.Url, Method = "DELETE" }
+		request(abcdef)
 		return true
 	end
 	return webhookdetect(self)
@@ -24,11 +26,11 @@ end)
 wait(0.5)
 if OldName ~= ActualHost then
 	print("Let")
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/FourDevils/IKUCracked/main/IKU%20Premium%20Gui"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MsorkyScripts/CrackedIKU/main/CrackedIKU"))()
 	else 
 	-- gui leak LOL
 	if game.CoreGui:FindFirstChild("AltControlGui") then game.StarterGui:SetCore("SendNotification",{Title ="ShittyKU Leaked",Text ="Script already executed!",Duration =25}) else
-game.StarterGui:SetCore("SendNotification",{Title ="IKU CRACKED",Text ="Cracked by FourDevils#2119 @ dont buy iku#7460",Duration =999999999999999999999999})
+game.StarterGui:SetCore("SendNotification",{Title ="ShitKU",Text ="Leaked by FourDevils#2119 and dont buy iku#7460",Duration =999999999999999999999999})
 local AltControlGui = Instance.new("ScreenGui")
 local BackFrame = Instance.new("Frame")
 local Main = Instance.new("Frame")
